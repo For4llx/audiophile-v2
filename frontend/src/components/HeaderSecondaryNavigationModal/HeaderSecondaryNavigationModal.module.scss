@@ -1,0 +1,6 @@
+.container {
+  composes: import container from "@/styles/Utils.module.scss";
+  background-color: hsl(var(--light));
+  padding-top: 56px;
+  padding-bottom: 56px;
+}

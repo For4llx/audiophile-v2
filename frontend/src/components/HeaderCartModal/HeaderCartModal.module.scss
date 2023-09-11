@@ -1,0 +1,27 @@
+.container {
+  composes: import container from "@/styles/Utils.module.scss";
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.card {
+  composes: import box from "@/styles/Utils.module.scss";
+  width: 377px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+    width: 100%;
+  }
+}

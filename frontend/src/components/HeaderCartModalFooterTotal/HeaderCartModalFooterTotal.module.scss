@@ -1,0 +1,15 @@
+.container {
+  composes: import flexRow from "@/styles/Utils.module.scss";
+}
+
+.name {
+  composes: import body from "@/styles/Typography.module.scss";
+  opacity: 50%;
+  text-transform: uppercase;
+}
+
+.price {
+  composes: import h6 from "@/styles/Typography.module.scss";
+  line-height: 0;
+  letter-spacing: 0;
+}

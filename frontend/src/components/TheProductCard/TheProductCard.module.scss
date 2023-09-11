@@ -1,0 +1,84 @@
+.container {
+  composes: import container from "@/styles/Utils.module.scss";
+  margin-top: 56px;
+}
+
+.footer {
+  display: flex;
+  gap: 1rem;
+}
+
+.card {
+  composes: import container from "@/styles/Card.module.scss";
+}
+
+.figure {
+  composes: import figure from "@/styles/Card.module.scss";
+}
+
+.body {
+  composes: import body from "@/styles/Card.module.scss";
+}
+
+.overline {
+  composes: import overline from "@/styles/Typography.module.scss";
+  color: hsl(var(--primary));
+}
+
+.title {
+  composes: import h2 from "@/styles/Typography.module.scss";
+  margin-top: 1rem;
+  color: hsl(var(--dark));
+}
+
+.copy {
+  composes: import body from "@/styles/Typography.module.scss";
+  margin-top: 2rem;
+  color: hsl(var(--dark), 50%);
+}
+
+.footer {
+  margin-top: 40px;
+}
+
+.button {
+  composes: import primary from "@/styles/Button.module.scss";
+  composes: import small from "@/styles/Button.module.scss";
+}
+
+.price {
+  margin-top: 2rem;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1.3px;
+  line-height: inherit;
+  color: hsl(var(--dark));
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin-top: 2rem;
+  }
+  .figure {
+    max-width: 281px;
+    min-height: 480px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .figure {
+    max-width: 100%;
+    width: 100%;
+    min-height: 327px;
+  }
+
+  .body {
+    max-width: 327px;
+    width: 100%;
+  }
+}

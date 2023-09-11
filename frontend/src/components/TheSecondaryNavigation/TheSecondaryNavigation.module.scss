@@ -1,0 +1,16 @@
+.container {
+  composes: import container from "@/styles/Utils.module.scss";
+  margin-top: 120px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin-top: 96px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    margin-top: 40px;
+  }
+}

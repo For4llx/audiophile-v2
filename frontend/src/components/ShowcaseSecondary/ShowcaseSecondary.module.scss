@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  align-items: center;
+  border-radius: var(--border-radius);
+  padding: 5rem;
+  background-image: url("/./assets/home/desktop/image-speaker-zx7.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 320px;
+}
+
+.title {
+  composes: import h4 from "@/styles/Typography.module.scss";
+  color: hsl(var(--dark));
+}
+
+.button {
+  composes: import secondary from "@/styles/Button.module.scss";
+  composes: import small from "@/styles/Button.module.scss";
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    background-image: url("/./assets/home/tablet/image-speaker-zx7.jpg");
+  }
+
+  .button {
+    margin-top: 32px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    background-image: url("/./assets/home/mobile/image-speaker-zx7.jpg");
+    padding: 2.5rem;
+  }
+}

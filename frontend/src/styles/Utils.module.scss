@@ -1,0 +1,27 @@
+.container {
+  padding-left: max(calc(50% - var(--container) / 2), 2rem);
+  padding-right: max(calc(50% - var(--container) / 2), 2rem);
+}
+
+.action {
+  cursor: pointer;
+  color: hsl(var(--light));
+  fill: hsl(var(--light));
+
+  &:hover {
+    color: hsl(var(--primary));
+    fill: hsl(var(--primary));
+  }
+}
+
+.box {
+  padding: 2rem;
+  background-color: hsl(var(--light));
+  border-radius: var(--border-radius);
+}
+
+.flexRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

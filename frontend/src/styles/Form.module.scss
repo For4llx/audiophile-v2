@@ -1,0 +1,20 @@
+.input {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border-radius: var(--border-radius);
+  border: 1px solid #cfcfcf;
+}
+
+.label {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-transform: capitalize;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: -0.21px;
+  color: hsl(var(--dark));
+}

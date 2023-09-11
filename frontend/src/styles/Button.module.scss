@@ -1,0 +1,75 @@
+.button {
+  composes: import subtitle from "./Utils.module.scss";
+  cursor: pointer;
+  padding: 0.8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.primary {
+  composes: button;
+  color: hsl(var(--light));
+  background-color: hsl(var(--primary));
+
+  &:hover {
+    background-color: hsl(var(--primaryLight));
+  }
+}
+
+.primaryBlack {
+  composes: button;
+  color: hsl(var(--light));
+  background-color: hsl(var(--dark));
+
+  &:hover {
+    background-color: #4c4c4c;
+  }
+}
+
+.secondary {
+  composes: button;
+  background-color: transparent;
+  color: hsl(var(--dark));
+  border: 1px solid hsl(var(--dark));
+
+  &:hover {
+    background-color: hsl(var(--dark));
+    color: hsl(var(--light));
+  }
+}
+
+.tertiary {
+  composes: button;
+  padding: 0;
+  display: flex;
+  gap: 13px;
+  background-color: transparent;
+  color: hsla(var(--dark), 50%);
+
+  &:hover {
+    color: hsl(var(--primary));
+  }
+
+  &::after {
+    content: url("/./assets/shared/desktop/icon-arrow-right.svg");
+    display: flex;
+    align-items: center;
+  }
+}
+
+.text {
+  composes: impot body from "./Utils.module.scss";
+  cursor: pointer;
+  color: hsla(var(--dark), 50%);
+  font-weight: 400;
+  text-decoration: underline;
+
+  &:hover {
+    color: hsl(var(--primary));
+  }
+}
+
+.small {
+  width: 160px;
+  height: 48px;
+}

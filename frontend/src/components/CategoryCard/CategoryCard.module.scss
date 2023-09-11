@@ -1,0 +1,78 @@
+.card {
+  composes: import container from "@/styles/Card.module.scss";
+}
+
+.figure {
+  composes: import figure from "@/styles/Card.module.scss";
+}
+
+.body {
+  composes: import body from "@/styles/Card.module.scss";
+}
+
+.overline {
+  composes: import overline from "@/styles/Typography.module.scss";
+  color: hsl(var(--primary));
+}
+
+.title {
+  composes: import h2 from "@/styles/Typography.module.scss";
+  margin-top: 1rem;
+  color: hsl(var(--dark));
+}
+
+.copy {
+  composes: import body from "@/styles/Typography.module.scss";
+  margin-top: 2rem;
+  color: hsl(var(--dark), 50%);
+}
+
+.button {
+  composes: import primary from "@/styles/Button.module.scss";
+  composes: import small from "@/styles/Button.module.scss";
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    flex-direction: column;
+    text-align: center;
+    gap: 52px;
+  }
+
+  .figure {
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    min-height: 588px;
+  }
+
+  .body {
+    width: 100%;
+    max-width: 572px;
+  }
+
+  .button {
+    margin-top: 24px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .title {
+    margin-top: 1.5rem;
+    font-size: 28px;
+    letter-spacing: 1px;
+  }
+
+  .figure {
+    max-height: 352px;
+  }
+
+  .body {
+    max-width: 327px;
+  }
+
+  .copy {
+    margin-top: 1.5rem;
+  }
+}

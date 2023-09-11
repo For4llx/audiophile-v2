@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.quantity {
+  composes: import body from "@/styles/Typography.module.scss";
+  color: hsl(var(--primary));
+  font-weight: bold;
+}
+
+.name {
+  composes: import body from "@/styles/Typography.module.scss";
+  color: hsl(var(--dark), 50%);
+}

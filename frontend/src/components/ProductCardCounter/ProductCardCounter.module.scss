@@ -1,0 +1,19 @@
+.container {
+  composes: import container from "@/styles/Counter.module.scss";
+  composes: import medium from "@/styles/Counter.module.scss";
+}
+
+.button {
+  composes: import button from "@/styles/Counter.module.scss";
+  cursor: pointer;
+  color: hsl(var(--dark), 25%);
+
+  &:hover {
+    color: hsl(var(--primary));
+  }
+}
+
+.value {
+  composes: import value from "@/styles/Counter.module.scss";
+  text-align: center;
+}

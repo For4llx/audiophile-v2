@@ -1,0 +1,22 @@
+.container {
+  composes: import container from "@/styles/Utils.module.scss";
+  margin-top: 160px;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 120px;
+    margin-top: 120px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    margin-top: 88px;
+    gap: 88px;
+  }
+}

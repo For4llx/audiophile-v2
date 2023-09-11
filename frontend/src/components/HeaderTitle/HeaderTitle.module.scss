@@ -1,0 +1,24 @@
+.title {
+  composes: import h2 from "@/styles/Typography.module.scss";
+  margin-top: 98px;
+  padding-bottom: 98px;
+  text-align: center;
+  color: hsl(var(--light));
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    margin-top: 105px;
+    padding-bottom: 105px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .title {
+    margin-top: 32px;
+    padding-bottom: 32px;
+    font-size: 28px;
+    line-height: 0;
+    letter-spacing: 2px;
+  }
+}

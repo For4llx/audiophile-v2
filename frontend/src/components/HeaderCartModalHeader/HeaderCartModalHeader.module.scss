@@ -1,0 +1,14 @@
+.container {
+  composes: import flexRow from "@/styles/Utils.module.scss";
+}
+
+.title {
+  composes: import h6 from "../../styles/Utils.module.scss";
+}
+
+.button {
+  composes: import body from "../../styles/Typography.module.scss";
+  composes: import action from "../../styles/Utils.module.scss";
+  color: hsl(var(--dark), 50%);
+  text-decoration: underline;
+}

@@ -1,0 +1,13 @@
+.title {
+  composes: import body from "@/styles/Typography.module.scss";
+  color: hsl(var(--dark));
+  font-weight: bold;
+}
+
+.subtitle {
+  composes: import overline from "@/styles/Typography.module.scss";
+  color: hsl(var(--dark), 50%);
+  line-height: 25px;
+  letter-spacing: 0;
+  font-weight: bold;
+}

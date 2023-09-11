@@ -1,0 +1,37 @@
+.medium {
+  height: 48px;
+  width: 120px;
+}
+
+.small {
+  height: 32px;
+  width: 96px;
+}
+
+.container {
+  display: flex;
+}
+
+.input {
+  width: fit-content;
+  background-color: hsl(var(--grey));
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  width: 100%;
+}
+
+.button {
+  composes: input;
+  cursor: pointer;
+  color: hsl(var(--dark), 25%);
+
+  &:hover {
+    color: hsl(var(--primary));
+  }
+}
+
+.value {
+  composes: input;
+  text-align: center;
+}

@@ -1,0 +1,84 @@
+.container {
+  position: relative;
+  background-color: hsl(var(--primary));
+  border-radius: var(--border-radius);
+  padding: 8rem 5rem;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+
+  background-image: url("/./assets/home/desktop/image-speaker-zx9.png"),
+    url("/./assets/home/desktop/pattern-circles.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 410.23px 493px, 944px;
+  background-position: 8rem 5rem, -9rem -3rem;
+}
+
+.title {
+  composes: import h1 from "@/styles/Typography.module.scss";
+  width: 260px;
+  color: hsl(var(--light));
+}
+
+.body {
+  composes: import body from "@/styles/Typography.module.scss";
+  width: 350px;
+  margin-top: 24px;
+  color: hsl(var(--light), 75%);
+}
+
+.button {
+  composes: import primaryBlack from "@/styles/Button.module.scss";
+  composes: import small from "@/styles/Button.module.scss";
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    background-size: 197.21px 237px, 944px;
+    background-position: center 3rem, center -18rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 720px;
+    padding-bottom: 4rem;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    background-size: 172.25px 207px, 558px;
+    background-position: center 3rem, center -7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+    padding-bottom: 3rem;
+  }
+
+  .title {
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 1.3px;
+    width: 280px;
+    word-spacing: 280px;
+  }
+
+  .body {
+    width: 280px;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}

@@ -1,0 +1,19 @@
+.container {
+  max-width: 635px;
+}
+
+.title {
+  composes: import h3 from "@/styles/Typography.module.scss";
+  margin-bottom: 2rem;
+}
+
+.body {
+  composes: import body from "@/styles/Typography.module.scss";
+  color: hsla(var(--dark), 50%);
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 689px;
+  }
+}

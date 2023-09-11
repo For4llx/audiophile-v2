@@ -1,0 +1,32 @@
+.container {
+  composes: import container from "@/styles/Utils.module.scss";
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 75px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 101px;
+    height: 4px;
+    background-color: hsl(var(--primary));
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding-top: 48px;
+    flex-direction: column;
+    gap: 48px;
+    align-items: center;
+  }
+}

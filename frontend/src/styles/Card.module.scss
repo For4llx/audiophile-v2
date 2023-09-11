@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.figure {
+  position: relative;
+  max-width: 540px;
+  width: 50%;
+  min-height: 560px;
+}
+
+.body {
+  width: 50%;
+  max-width: 445px;
+}

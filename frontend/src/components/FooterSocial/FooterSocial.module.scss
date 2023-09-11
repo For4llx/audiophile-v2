@@ -1,0 +1,10 @@
+.menu {
+  display: flex;
+  align-items: center;
+  height: fit-content;
+  gap: 1rem;
+}
+
+.link {
+  composes: import action from "@/styles/Utils.module.scss";
+}

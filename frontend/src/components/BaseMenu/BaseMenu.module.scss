@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+  border-bottom: 1px solid hsl(var(--light), 20%);
+}
+
+.hamburger {
+  position: relative;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    position: relative;
+    justify-content: flex-start;
+    gap: 2.625rem;
+  }
+
+  .cart {
+    position: absolute;
+    right: 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .navigation {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    position: static;
+    justify-content: space-between;
+    gap: 2.625rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .cart {
+    position: static;
+  }
+}
